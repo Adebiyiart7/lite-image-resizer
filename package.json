@@ -1,0 +1,63 @@
+{
+  "name": "lite-image-resizer",
+  "version": "1.0.0",
+  "description": "A utility for resizing images.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "image",
+    "resize",
+    "resizer",
+    "javascript",
+    "typescript",
+    "react-image",
+    "react-image-resize",
+    "react-image-resizer",
+    "resize-image",
+    "lite-image-resize",
+    "lightweight-image-resizer",
+    "react-image-optimization",
+    "react-image-thumbnail",
+    "react-image-compression",
+    "compress-image",
+    "sharp"
+  ],
+  "author": "Adeeyo Joseph Adebiyi (Adebiyiart7)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "@types/react": "18.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.8",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "typescript": "4.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adebiyiart7/lite-image-resizer.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
+}
