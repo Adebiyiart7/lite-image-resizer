@@ -10,7 +10,6 @@
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Invoke](#invoke)
-4. [License](#license)
 
 ## 💽Installation
 
