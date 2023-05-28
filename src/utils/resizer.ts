@@ -45,7 +45,7 @@ const resizer = (file: File, resizeWidth: number, newFileName: string): Promise<
           u8arr[n] = bstr.charCodeAt(n)
         }
 
-        const resizedFile = new File([u8arr], `${newFileName}.png`, {
+        const resizedFile = new File([u8arr], `${Date.now()}__${newFileName}.png`, {
           type: mime,
         })
 
