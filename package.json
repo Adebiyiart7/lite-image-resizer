@@ -1,6 +1,6 @@
 {
   "name": "lite-image-resizer",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A utility for resizing images.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
