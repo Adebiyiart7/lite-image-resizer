@@ -44,7 +44,7 @@ The imageResizer function takes in 3 arguments.
 | Params      | Description                                                                                      | Type       | Default |
 | ----------- | ------------------------------------------------------------------------------------------------ | ---------- | ------- |
 | file        | Raw file from HTML input                                                                         | _`File`_   | none    |
-| resizeWith  | The width you want to resize the image to. The imageResizer function will maintain aspect ratio. | _`Number`_ | none    |
+| resizeWidth  | The width you want to resize the image to. The imageResizer function will maintain aspect ratio. | _`Number`_ | none    |
 | newFileName | The function receives the newFileName and prefixes it with the current timestamp.                | _`String`_ | none    |
 
 ## Issues
