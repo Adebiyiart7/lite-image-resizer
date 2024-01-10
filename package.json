@@ -1,6 +1,6 @@
 {
   "name": "lite-image-resizer",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "description": "A utility for resizing images.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -12,7 +12,7 @@
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests}/**/*.{js,ts,jsx,tsx}\"",
     "test": ""
   },
   "keywords": [

@@ -32,7 +32,7 @@ const resizer = (file: File, resizeWidth: number, newFileName: string): Promise<
         ctx!.drawImage(img, 0, 0, elem.width, elem.height)
 
         // get the base64-encoded Data URI from the resized image
-        const srcEncoded = ctx!.canvas.toDataURL('image/png', 1)
+        const srcEncoded = ctx!.canvas.toDataURL(file.type, 1)
 
         // CONVERT RESIZED IMAGE BACK TO IMAGE FILE
         const arr = srcEncoded.split(',')
@@ -45,7 +45,7 @@ const resizer = (file: File, resizeWidth: number, newFileName: string): Promise<
           u8arr[n] = bstr.charCodeAt(n)
         }
 
-        const resizedFile = new File([u8arr], `${Date.now()}__${newFileName}.png`, {
+        const resizedFile = new File([u8arr], `${Date.now()}__${newFileName}.${file.type.split('/')[1]}`, {
           type: mime,
         })
 
